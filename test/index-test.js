@@ -4,20 +4,14 @@ describe('shout(string)', function() {
     expect(shout('hello')).toEqual('HELLO')
   })
 })
-'Hello!'.toUpperCase();
-function shout(string) {
-  return string.toUpperCase()
-}
+
+
 
 describe('whisper(string)', function() {
   it('receives one argument and returns it in all lowercase', function() {
     expect(whisper('HELLO')).toEqual('hello')
   })
 })
-'Hello'.toLowerCase();
-function whisper(string) {
-  return string.toLowerCase()
-}
 
 describe('logShout(string)', function() {
   it('calls console.log() its one argument in all caps', function() {
@@ -30,9 +24,7 @@ describe('logShout(string)', function() {
     console.log.restore()
   })
 })
-function logShout ('hello') {
-console.log('hello'.toUpperCase() );
-}
+
 
 
 
@@ -47,9 +39,6 @@ describe('logWhisper(string)', function() {
     console.log.restore()
   })
 })
-function logWhisper ('hello') {
-  console.log ('hello'.toLowerCase() );
-}
 
 describe('sayHiToGrandma(string)', function() {
   it('returns "I can\'t hear you!" if `string` is lowercase', function() {
@@ -64,14 +53,3 @@ describe('sayHiToGrandma(string)', function() {
     expect(sayHiToGrandma("I love you, Grandma.")).toEqual("I love you, too.")
   })
 })
-function sayHiToGrandma (sayHiToGrandma) {
-  var cantUnswer = "i can't hear you";
-  var yesUnswer = "YES INDEED!";
-  var lovUnswer = "i love you, too.";
-  if (aWord.toLowerCase(sayHiToGrandma) === sayHiToGrandma) {
-    return yesUnswer;
-  }
-  else if ("I love you, Grandma." === sayHiToGrandma) {
-    return lovUnswer
-  }
-}
